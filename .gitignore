@@ -12,6 +12,14 @@ obj/
 **/bin/
 **/obj/
 
+# Node modules
+node_modules/
+**/node_modules/
+
+# Angular build output
+client/dist/
+client/build/
+
 # Rider
 .idea/
 
@@ -50,3 +58,4 @@ Properties/launchSettings.json
 
 # Ignore user-specific folders
 secrets/
+node_modules

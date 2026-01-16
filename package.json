@@ -1,0 +1,24 @@
+{
+  "name": "datingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandamudi2/DatingApp_2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dandamudi2/DatingApp_2026/issues"
+  },
+  "homepage": "https://github.com/dandamudi2/DatingApp_2026#readme",
+  "devDependencies": {
+    "@angular/cli": "^21.1.0"
+  }
+}
