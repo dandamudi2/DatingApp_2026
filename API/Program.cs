@@ -9,7 +9,21 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<API.Data.AppDbContext>(options =>
 	options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy("AllowAngularApp", policy =>
+	{
+		policy.AllowAnyOrigin()
+			  .AllowAnyMethod()
+			  .AllowAnyHeader();
+	});
+});
+
 var app = builder.Build();
+
+// Use CORS
+app.UseCors("AllowAngularApp");
 
 app.MapControllers();
 
