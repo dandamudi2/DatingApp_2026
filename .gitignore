@@ -1,0 +1,52 @@
+# Ignore Visual Studio temporary files, build output, and user-specific files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build folders
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Rider
+.idea/
+
+# Dotnet artifacts
+artifacts/
+project.lock.json
+project.fragment.lock.json
+
+# NuGet
+*.nupkg
+.packages/
+
+# Logs
+*.log
+
+# Database files (local sqlite)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Local app settings and secrets
+appsettings.Development.json
+appsettings.*.Local.json
+local.settings.json
+secrets.json
+.env
+
+# Launch settings (local developer configs)
+Properties/launchSettings.json
+
+# Ignore dotnet tool restore state
+.dotnet_tool_restore
+
+# Ignore user-specific folders
+secrets/
