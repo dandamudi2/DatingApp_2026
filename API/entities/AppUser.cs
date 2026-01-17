@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace API.entities
@@ -13,5 +14,11 @@ namespace API.entities
         [Required]
         [EmailAddress]
         public string Email { get; set; } = string.Empty;
+
+      
+        public required byte[] PasswordHash { get; set; } = Array.Empty<byte>();
+
+
+        public required byte[] PasswordSalt { get; set; } = Array.Empty<byte>();
     }
 }
